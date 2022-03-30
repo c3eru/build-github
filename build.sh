@@ -12,6 +12,6 @@ export BUILD_USERNAME=mobxprjkt
 export BUILD_HOSTNAME=RANDOMBUILD
 lunch cherish_juice-userdebug
 
-brunch juice -j8
+brunch juice
 
 # end
