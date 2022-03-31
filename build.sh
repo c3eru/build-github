@@ -8,6 +8,7 @@ source build/envsetup.sh
 export TZ=Asia/Jakarta
 export BUILD_USERNAME=mobxprjkt
 export BUILD_HOSTNAME=RANDOMBUILD
+export ALLOW_MISSING_DEPENDENCIES=true
 lunch aosp_juice-userdebug
 
 mka bacon
