@@ -1,4 +1,4 @@
-name: Rom-Builder
+name: Awaken
 on: 
   workflow_dispatch:
   push:
@@ -23,7 +23,7 @@ jobs:
           mkdir -p $my_dir/script/$device
           cd $my_dir/script/$device
           rm -rf *
-          wget https://raw.githubusercontent.com/c3eru/build-github/main/build.sh
+          wget https://raw.githubusercontent.com/c3eru/build-github/awaken/build.sh
           export rom_name="$(grep init $my_dir/script/$device/build.sh -m 1 | cut -d / -f 4)"
           export command="$(head $my_dir/script/$device/build.sh -n $(expr $(grep '# build rom' $my_dir/script/$device/build.sh -n | cut -f1 -d:) - 1))"
           export only_sync=$(grep 'repo sync' $my_dir/script/$device/build.sh)
